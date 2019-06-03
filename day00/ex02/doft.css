@@ -1,0 +1,198 @@
+body {
+    background-color: #505050;
+}
+
+
+.title {
+    margin-left: 240px;
+    margin-top: 20px;
+    width: 1420px;
+    height: 150px;
+    background-color: #909090;
+    box-shadow: 10px 10px 20px;
+}
+.day {
+    width: 430px;
+    height: 135px;
+    border-radius: 10px;
+    border: none;
+}
+
+.loupe {
+    position: relative;
+    left: 690px;
+    top: 20px;
+}
+
+.close {
+    position: relative;
+    left: 695px;
+    bottom: 5px;
+}
+
+.reload {
+    position: relative;
+    left: 670px;
+    bottom: 120px;
+
+}
+
+.leftmenu {
+    position: relative;
+    left: 270px;
+    top: 20px;
+    width: 140px;
+    height: 425px;
+    background-color: #909090;
+    box-shadow: 10px 10px 20px;
+}
+
+.arrow {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    top: 20px;
+}
+
+.main {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    top: 30px;
+}
+
+.oeil {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: solid;
+    border-width: 5px;
+    border-color: #EA3326;
+    display: block;
+    margin: 0 auto;
+    top: 40px;
+}
+
+.outil {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.chat {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    top: 60px;
+}
+
+
+.central {
+    width: 1020px;
+    height: 575px;
+    position: relative;
+    bottom: 405px;
+    left: 440px;
+    border: solid;
+    border-width: 10px;
+    border-color: #909090;
+    box-shadow: 10px 10px 20px;
+}
+
+.cluster {
+    right: 2px;
+    position: relative;
+    background-color: #909090;
+}
+
+
+
+.rightmenu {
+    position: relative;
+    left: 1510px;
+    bottom: 1000px;
+    width: 140px;
+    height: 425px;
+    background-color: #909090;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px;
+
+}
+
+.book {
+    position: relative;
+    width: 65px;
+    height: 95px;
+    display: block;
+    margin: 0 auto;
+    top: 20px;
+}
+
+.towel {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    top: 30px;
+}
+
+.brick {
+    background-image: url("resources/brick.jpg");
+    position: relative;
+    width: 120px;
+    height: 70px;
+    left: 10px;
+    top: 30px;
+}
+
+.ramka {
+    position: relative;
+    left: 200px;
+    bottom: 900px;
+    display: block;
+    width: 520px;
+    height: 170px;
+    background-color: rgb(125, 255, 126);
+
+
+}
+
+.form_text {
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    font-family: verdana;
+    margin-left: 10px;
+    padding-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+.big_text {
+    font-size: 30px;
+    font-family : 'palatino linotype', 'book antiqua', 'Palatino', serif;
+}
+
+.input_class
+{
+    margin-left: 10px;
+    width: 400px;
+}
+.shadow_text {
+    text-shadow: 5px 5px 3px #c60f0f;
+}
+
+.title, .leftmenu, .rightmenu, .ramka, .central {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+}
+

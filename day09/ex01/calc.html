@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+</head>
+<body>
+
+<form id="calc">
+    <input type="text" id="first_num" method="post">
+
+    <select id="operation">
+        <option selected value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="text" id="second_num">
+
+    <input type="button" onclick="calc()" value="Try my!">
+</form>
+
+<script>
+    window.onload = function() {
+        var form_id = document.forms["calc"];
+    }
+
+    setInterval( function () {
+        alert('Please, use me...')
+    } , 30000)
+
+    function out_result(result) {
+        console.log(result);
+        alert(result);
+    }
+
+    function calc() {
+        var num1 = document.getElementById('first_num').value;
+        var num2 = document.getElementById('second_num').value;
+        var operation = document.getElementById('operation').value;
+        if (!num1.match('^[0-9]+$')) {
+            return alert('Error :(');
+        }
+        if (!num2.match('^[0-9]+$')) {
+            return alert('Error :(');
+        }
+        var result;
+        switch (operation) {
+            case '+':
+                result = num1*1 + num2*1;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = (num1 * num2);
+                break;
+            case '/':
+                result = (num1 / num2);
+                break;
+            case '%':
+                result = (num1 % num2);
+                break;
+        }
+        if (result == Infinity || result != result) {
+            result = 'It’s over 9000!';
+        }
+        out_result(result)
+    }
+</script>
+
+</body>
+</html>

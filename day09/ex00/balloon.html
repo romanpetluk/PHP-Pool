@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>Javascript</title>
+    <style>
+        .round {
+            width: 200px;
+            height: 200px;
+            margin:auto;
+            border-radius: 50%;
+            background: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+<div class="round" id="rou"></div>
+
+<script>
+    window.onload = function(){
+        var bg = document.getElementById('rou');
+        var rr = 200;
+        var ar = new Array ('red', 'green', 'blue')
+        var i = 0;
+        bg.onclick = function(){
+            rr += 10;
+            i++;
+            if (i > 2)
+                i = 0;
+            if (rr > 420)
+                rr = 200;
+
+            this.style.height =  rr +'px';
+            this.style.width = rr + 'px';
+            this.style.background = ar[i];
+        }
+        bg.onmouseleave = function () {
+            if (rr > 200) {
+                i--;
+                if (i < 0)
+                    i = 2;
+                rr -= 5;
+                this.style.height = rr +'px';
+                this.style.width = rr + 'px';
+                this.style.background = ar[i];
+            }
+        }
+        if (rr % 30 == 0)
+            this.style.background = 'green'
+        else if (rr % 20 == 0)
+            this.style.background = 'blue'
+        else if (rr % 10 == 0)
+            this.style.background = 'red'
+    };
+</script>
+
+</body>
+</html>

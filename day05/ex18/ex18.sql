@@ -1,0 +1,1 @@
+SELECT `id_distrib` FROM db_rpetluk.distrib WHERE(db_rpetluk.distrib.id_distrib = 42 || db_rpetluk.distrib.id_distrib BETWEEN 62 AND 69 || db_rpetluk.distrib.id_distrib = 71 || db_rpetluk.distrib.id_distrib BETWEEN 88 AND 91 ) OR LOWER(`name`) LIKE '%y%y%' LIMIT 5 OFFSET 2;
